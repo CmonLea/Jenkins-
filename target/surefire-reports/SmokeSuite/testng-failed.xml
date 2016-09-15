@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [SmokeSuite]" parallel="tests">
+  <parameter name="port" value="4725"/>
+  <parameter name="device" value="Coolpad8750-0xa36065"/>
+  <parameter name="bp" value="4732"/>
+  <test name="run on device 2(failed)" parallel="tests">
+    <parameter name="port" value="4725"/>
+    <parameter name="device" value="Coolpad8750-0xa36065"/>
+    <parameter name="bp" value="4732"/>
+    <classes>
+      <class name="com.appium.test.ParallelTest">
+        <methods>
+          <include name="Login"/>
+          <include name="testsetup"/>
+          <include name="testsetup"/>
+          <include name="quit"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.appium.test.ParallelTest -->
+    </classes>
+  </test> <!-- run on device 2(failed) -->
+  <test name="run on device 1(failed)" parallel="tests">
+    <parameter name="port" value="4723"/>
+    <parameter name="device" value="7N2RDQ1496009372"/>
+    <parameter name="bp" value="4730"/>
+    <classes>
+      <class name="com.appium.test.ParallelTest">
+        <methods>
+          <include name="Login"/>
+          <include name="testsetup"/>
+          <include name="testsetup"/>
+          <include name="quit"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.appium.test.ParallelTest -->
+    </classes>
+  </test> <!-- run on device 1(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->
